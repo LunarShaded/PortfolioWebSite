@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.headerSection{
+    padding: 12px;
+    font-family: var(--font-main);
+}
+
+.headerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.colorBtn{
+    background: rgba(243, 243, 243, 0.315);
+    border: none;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon{
+    color: var(--primary-color);
+    width: 34px;
+    height: 34px;
+}
+
+.navList{
+    display: flex;
+    gap: 40px;
+}
+
+.navList li{
+    list-style: none;
+}
+
+.navList li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: var(--font-weight-main);
+    transition: 0.2s ease;
+}
+
+.navList li a:hover{
+   color: var(--second-color);
+}
+
+.contactBtn{
+    position: relative;
+    display: inline-block;
+}
+
+.contactBtn::after{
+    content: "";
+    position: absolute;
+
+    width: 90%;
+    height: 2px;
+
+    background: var(--second-color);
+
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.socialsBox{
+    display: flex;
+    gap: 38px;
+}
+
+.socialsBox img{
+    width: 34px;
+}
